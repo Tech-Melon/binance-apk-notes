@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+*.apk
+*.so
+*.dex
+_run_*.py
+__pycache__/
+.venv/
+.env
+*.log
+.idea/
+.vscode/
