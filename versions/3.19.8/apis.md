@@ -1,5 +1,7 @@
 # 3.19.8 接口
 
+完整包相对 Play base **没有新路径**。下面实打仍用 `www.binance.com`。
+
 Host：`https://www.binance.com`  
 头：`Accept: application/json`，`lang: en`，`clienttype: android`
 
