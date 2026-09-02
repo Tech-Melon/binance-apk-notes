@@ -11,6 +11,7 @@
 | 3.18.4 | `binance-3-18-4.apk` | 人脸核验 + 股票划转 + 小程序 5.15 | [versions/3.18.4](versions/3.18.4/README.md) · [对照](compare/3.17.1-3.18.4.md) |
 | 3.19.5 | `BNApp64_V3.19.5.apk` | 美股开卖文案 + 预测市场进广场 + 跟单自管 | [versions/3.19.5](versions/3.19.5/README.md) · [对照](compare/3.18.4-3.19.5.md) |
 | 3.19.8 | `BNApp64_V3.19.8.apk` | 美股期权交易 UI + 期权链接口 | [versions/3.19.8](versions/3.19.8/README.md) · [对照](compare/3.19.5-3.19.8.md) |
+| 3.20.1 | `币安 3.20.1.apk`（Play base，尚无 BNApp64） | AOR 路由 + 成本价改版 + 消息请求 + Flutter Square | [versions/3.20.1](versions/3.20.1/README.md) · [对照](compare/3.19.8-3.20.1.md) |
 
 ## 每版里有什么
 
