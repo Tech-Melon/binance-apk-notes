@@ -12,6 +12,7 @@
 | 3.19.5 | `BNApp64_V3.19.5.apk` | 美股开卖文案 + 预测市场进广场 + 跟单自管 | [versions/3.19.5](versions/3.19.5/README.md) · [对照](compare/3.18.4-3.19.5.md) |
 | 3.19.8 | `BNApp64_V3.19.8.apk` | 美股期权交易 UI + 期权链接口 | [versions/3.19.8](versions/3.19.8/README.md) · [对照](compare/3.19.5-3.19.8.md) |
 | 3.20.1 | `币安 3.20.1.apk`（Play base，尚无 BNApp64） | AOR 路由 + 成本价改版 + 消息请求 + Flutter Square | [versions/3.20.1](versions/3.20.1/README.md) · [对照](compare/3.19.8-3.20.1.md) |
+| 3.20.3 | `币安 3.20.3.apk`（Play base，尚无 BNApp64） | 美股定投 + For You/B9 + Jarvis 语音 + 行情简报播放 | [versions/3.20.3](versions/3.20.3/README.md) · [对照](compare/3.20.1-3.20.3.md) |
 
 ## 每版里有什么
 
