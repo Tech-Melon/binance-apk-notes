@@ -14,6 +14,7 @@
 | 3.20.1 | `币安 3.20.1.apk`（Play base，尚无 BNApp64） | AOR 路由 + 成本价改版 + 消息请求 + Flutter Square | [versions/3.20.1](versions/3.20.1/README.md) · [对照](compare/3.19.8-3.20.1.md) |
 | 3.20.3 | `币安 3.20.3.apk`（Play base，尚无 BNApp64） | 美股定投 + For You/B9 + Jarvis 语音 + 行情简报播放 | [versions/3.20.3](versions/3.20.3/README.md) · [对照](compare/3.20.1-3.20.3.md) |
 | 3.20.5 | `币安 3.20.5.apk`（Play base，尚无 BNApp64） | 钱包统一安全升级 + 批量恢复 + 预测事件接口 + 期权报价单设备 | [versions/3.20.5](versions/3.20.5/README.md) · [对照](compare/3.20.3-3.20.5.md) |
+| 3.20.6 | `BNApp64 (2).apk`（universal，3.19.8 后第一份完整包） | 无新页面/新接口；完整包补回旧功能译文；4 句播放器限制英文 | [versions/3.20.6](versions/3.20.6/README.md) · [对照](compare/3.20.5-3.20.6.md) |
 
 ## 每版里有什么
 
