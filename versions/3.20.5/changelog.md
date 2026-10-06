@@ -4,6 +4,8 @@
 「这句是新的」额外在 3.18.4 / 3.19.5 / 完整 3.19.8 / 3.20.1 Play base 上整包对过。  
 **没有 BNApp64 3.20.5**，不拿缺 so / 缺中文当产品下线。
 
+参数和页面见 [params.md](params.md)、[surface.md](surface.md)。
+
 ## 产品
 
 1. **Web3 钱包统一安全升级 + Quick Backup 批量恢复**  
@@ -22,7 +24,7 @@
 2. **预测市场上/下事件原生接口**  
    旧私有 `.../prediction/native/market/list` 从这版字符串里消失。  
    换成公开：`.../event/detail`、`.../event/up-down/list`。  
-   dex 里有 `SettledMarketListDataBlock`、`MarketTopicDataBlock`、`UpDownTradeFragment`、`SettledTimelineSheet`。  
+   这四个类名都不是这版新的：`UpDownTradeFragment`、`SettledTimelineSheet` 在 3.19.8 就有，`SettledMarketListDataBlock`、`MarketTopicDataBlock` 在 3.20.1 就有。这版新的是上面两条路径。  
    调试句写「过去」结算列表、timeline、slug 回落。  
    `Add prediction market` **旧**；这版新的是 event / up-down 路径。  
    公开空参和若干猜测字段都 `000002`，未继续猜。

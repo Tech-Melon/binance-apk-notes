@@ -23,4 +23,4 @@
 运营向竞赛文案很多（ETH Options Cup / GRVT / ESP / Stars & Stripes），当活动配置，不当常驻功能。
 
 - [相对 3.19.8](changelog.md) · [对照长文](../../compare/3.19.8-3.20.1.md)
-- [文案](copy.md) · [接口](apis.md) · [彩蛋](easter.md)
+- [文案](copy.md) · [接口](apis.md) · [参数](params.md) · [页面](surface.md) · [彩蛋](easter.md)

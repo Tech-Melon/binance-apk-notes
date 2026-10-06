@@ -22,4 +22,4 @@
 **本版没有：** 隐藏彩蛋、meme / 动物新产品、黄布、`secret menu`、独立「Binance Music」歌单产品句。
 
 - [相对 3.20.1](changelog.md) · [对照长文](../../compare/3.20.1-3.20.3.md)
-- [文案](copy.md) · [接口](apis.md) · [彩蛋](easter.md)
+- [文案](copy.md) · [接口](apis.md) · [参数](params.md) · [页面](surface.md) · [彩蛋](easter.md)

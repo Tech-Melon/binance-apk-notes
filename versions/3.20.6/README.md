@@ -24,4 +24,4 @@ so 只能和完整 3.19.8（74 个）比，中间隔了三版：去掉 `libaa71.
 **本版没有：** 新页面、新 `/bapi/`、新 `bnc://`、隐藏彩蛋、meme 新产品、黄布。
 
 - [相对 3.20.5](changelog.md) · [对照长文](../../compare/3.20.5-3.20.6.md)
-- [文案](copy.md) · [接口](apis.md) · [彩蛋](easter.md)
+- [文案](copy.md) · [接口](apis.md) · [参数](params.md) · [页面](surface.md) · [彩蛋](easter.md)

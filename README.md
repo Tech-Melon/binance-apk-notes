@@ -30,7 +30,7 @@ versions/<版本>/
   easter.md       彩蛋和误判
 ```
 
-`params.md` 和 `surface.md` 从 3.21.6 起写。更早的版本没有这两页。下一版复制 [`versions/_template`](versions/_template/README.md)。
+`params.md` 和 `surface.md` 从 3.20.1 起写。3.19.8 及更早没有这两页。下一版复制 [`versions/_template`](versions/_template/README.md)。
 
 ## 不是什么
 

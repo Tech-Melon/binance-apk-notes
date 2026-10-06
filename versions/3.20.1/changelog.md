@@ -4,6 +4,8 @@
 「这句是新的」额外在 3.18.4 / 3.19.5 / 完整 3.19.8 上整包对过。  
 **没有 BNApp64 3.20.1**，不拿缺 so / 缺中文当产品下线。
 
+参数和页面见 [params.md](params.md)、[surface.md](surface.md)。
+
 ## 产品
 
 1. **美股 Auto Order Routing（AOR）**  
@@ -39,7 +41,7 @@
    `Create Agentic Wallet`、`Keyless wallet dedicated for your AI Agent`、`Binance Hot Wallet`。  
    包内有文案和入口句，**没有**对应公开接口可打。
 10. **Trade Hub**  
-    `Trade Hub Now Available`。偏好页 `DeliveryPreferenceActivity` / `FuturePreferenceActivity` 从 Manifest 消失，像是收进交易中枢，不是功能蒸发。
+    `Trade Hub Now Available`。偏好页 `DeliveryPreferenceActivity` / `FuturePreferenceActivity` 从 Manifest 消失，像是收进交易中枢，不是功能蒸发。`DeliveryPreferenceActivity` 类名也没了；`FuturePreferenceActivity` 类名还在 dex 里。
 11. **远程小程序 quiz**  
     已有 appId `znf9fpiMh6ufdU3vDtAvi4`，这版新 query：`startPagePath=cGFnZXMvYnV6ei1hcHBlYWwtcXVpei9pbmRleA` → 解码 `pages/buzz-appeal-quiz/index`。明文 `buzz-appeal-quiz` **不在包里**。  
     另有新 appId `VEjMk4pBxLYdtkWUWGghxD`（无 startPagePath）。`daRdj4PkKgdy6HNB2dgwDC` / `gE3L87HgrhVrM5YAeaseWc` 是旧 id。

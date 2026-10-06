@@ -4,6 +4,8 @@
 「这句是新的」在 3.18.4 / 3.19.5 / 完整 3.19.8 / 3.20.1 / 3.20.3 / 3.20.5 上整包对过（dex + 完整 arsc + assets，UTF-8 和 UTF-16LE）。  
 **两边包装不同。** 完整包带回的 so、中文、`REQUEST_INSTALL_PACKAGES` 不是产品上新。
 
+参数和页面见 [params.md](params.md)、[surface.md](surface.md)。两页都是没有新产品字段、没有新 Activity。
+
 ## 产品
 
 1. **没有新页面、没有新接口**  

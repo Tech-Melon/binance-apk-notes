@@ -4,6 +4,8 @@
 「这句是新的」额外在 3.18.4 / 3.19.5 / 完整 3.19.8 上整包对过。  
 **没有 BNApp64 3.20.3**，不拿缺 so / 缺中文当产品下线。
 
+参数和页面见 [params.md](params.md)、[surface.md](surface.md)。
+
 ## 产品
 
 1. **美股定投 Recurring Buy**  
