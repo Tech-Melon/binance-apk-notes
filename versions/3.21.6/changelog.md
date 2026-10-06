@@ -47,6 +47,8 @@
 
 相对完整 3.20.6 少掉的 eKYC / 人脸模型、76 个 so、`classes26.dex`–`classes28.dex`，3.20.5 Play base 里同样没有。那是包装。
 
+参数、开关和深链查询串见 [params.md](params.md)。新增类名、去掉的页面、域名见 [surface.md](surface.md)。接口全量路径见 [apis.md](apis.md)。
+
 ## 基础设施
 
 - 小程序运行时仍 **5.16.4**。三个内置 MP id 不变。

@@ -14,4 +14,6 @@
 - [相对上一版](changelog.md)
 - [文案](copy.md)
 - [接口](apis.md)
+- [参数](params.md)
+- [页面](surface.md)
 - [彩蛋](easter.md)

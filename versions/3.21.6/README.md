@@ -23,4 +23,4 @@
 **本版没有：** 隐藏彩蛋、黄布、明文「美股期权」、Binance Music。so 差集不当产品变化。
 
 - [相对 3.20.6](changelog.md) · [对照长文](../../compare/3.20.6-3.21.6.md)
-- [文案](copy.md) · [接口](apis.md) · [彩蛋](easter.md)
+- [文案](copy.md) · [接口](apis.md) · [参数](params.md) · [页面](surface.md) · [彩蛋](easter.md)

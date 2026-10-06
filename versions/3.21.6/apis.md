@@ -25,17 +25,103 @@ Host：`https://www.binance.com`
 | GET | `/bapi/margin/v2/public/margin/get-wss-url` | public | 杠杆行情地址 | 200 `000000`，`data` 为 `wss://fstream.binance.com/private/ws` |
 | GET | `/bapi/apex/v1/friendly/apex/app/markets/tabs` | public | 旧行情底栏，复打 | 200 `000000`，`defaultTab=fav` |
 
-同一批差集里还有、这轮没有逐条打的 private 路径：B9 日报 `detail-v4` / `history-v4` / `display-v4`，自选 `apex/v2/.../watch-market`，mimir `get-b9-asset-report` v3，钱包收益卡 `yield/card/*`，Alpha `competition/query`，合约网格 `grid/algo-order`。未登录按 `100001005` 理解，不编返回体。
+`/bapi/fe/chimera/news-flash/friendly/v1/flash/detail` 用 GET 会 `000405 method not allowed, use POST`。没有改成 POST。  
+`/bapi/fe/chimera/admin/a2ui/get` 在客户端里。未登录 GET 返回 code `13`，网关要的不是这份 JSON。没有继续试。
 
-`/bapi/fe/chimera/news-flash/friendly/v1/flash/detail` 用 GET 会 `000405 method not allowed, use POST`。没有改成 POST。
+## 全量新 /bapi/
+
+下面每条都在旧包字节搜索里确认过，3.18.4 到 3.20.6 都没有。private 未登录按 `100001005` 理解。写操作只记路径，没有提交。
+
+行情和 B9：
+
+- `/bapi/apex/v1/friendly/apex/discover/trading/ranking-list`
+- `/bapi/apex/v1/private/apex/b9/asset-analysis/holding-performance`
+- `/bapi/apex/v1/private/apex/b9/daily-report/detail-v4`
+- `/bapi/apex/v1/private/apex/b9/daily-report/display-v4`
+- `/bapi/apex/v1/private/apex/b9/daily-report/history-v4`
+- `/bapi/apex/v1/private/apex/b9/watch-market/l2-report-widget`
+- `/bapi/apex/v1/private/apex/b9/widget/favouritemore/kline`
+- `/bapi/apex/v1/private/apex/homepage/vip-upgrade-popup/report`
+- `/bapi/apex/v1/private/apex/user/current/profile/voucher-widget`
+- `/bapi/apex/v2/private/apex/b9/homepage/watch-market`
+- `/bapi/apex/v2/private/apex/b9/watch-market/groups`
+- `/bapi/apex/v2/private/apex/b9/widget/favouritemore`
+- `/bapi/apex/v2/private/apex/b9/widget/favouritemore/list`
+- `/bapi/fe/mimir/v1/private/get-b9-report-preview`
+- `/bapi/fe/mimir/v1/private/list-hp-6in1-resource-banners`
+- `/bapi/fe/mimir/v3/private/get-b9-asset-report`
+- `/bapi/composite/v1/private/bigdata/finance/spot-pnl/pnl`
+
+美股期权和资金迁移：
+
+- `/bapi/equity/v1/public/equity/option/get-symbols-index`
+- `/bapi/equity/v1/public/equity/option/get-symbols-by-param`
+- `/bapi/equity/v1/private/equity/order/oto/place`
+- `/bapi/equity/v1/private/equity/order/otoco/place`
+- `/bapi/asset/v1/private/asset-service/funding-migrate/config`
+- `/bapi/asset/v1/private/asset-service/funding-migrate/migrate-to-spot`
+- `/bapi/c2c/v1/private/c2c/funding-migration/can-migrate`
+
+钱包、Meme、预测、Earn：
+
+- `/bapi/defi/v1/public/wallet-direct/buw/wallet/ai-widget/hot-zone/config`
+- `/bapi/defi/v1/public/wallet-direct/buw/wallet/ai-widget/query`
+- `/bapi/defi/v1/public/wallet-direct/buw/wallet/dex/market/token/ext/info`
+- `/bapi/defi/v1/public/wallet-direct/buw/wallet/market/token/pulse/rank/home/card`
+- `/bapi/defi/v1/public/wallet-direct/buw/wallet/token/token/address/gas-fee`
+- `/bapi/defi/v1/public/wallet-direct/prediction/mp/widget`
+- `/bapi/defi/v3/public/wallet-direct/buw/wallet/market/token/search/suggestion`
+- `/bapi/defi/v1/private/wallet-direct/buw/alpha-event/competition/query`
+- `/bapi/defi/v1/private/wallet-direct/mgmt/user/wallet/identity/type`
+- `/bapi/defi/v1/private/wallet-earn/simple/yield/card/banner/list`
+- `/bapi/defi/v1/private/wallet-earn/simple/yield/card/pool/list`
+- `/bapi/defi/v1/private/wallet-earn/simple/yield/card/token/list`
+- `/bapi/defi/v1/private/wallet-earn/simple/yield/pool/detail`
+- `/bapi/defi/v1/private/wallet-earn/simple/yield/pool/statistics`
+- `/bapi/defi/v1/private/wallet-earn/simple/yield/recommended/list/for/w3w`
+- `/bapi/defi/v1/private/wallet-earn/simple/yield/token/info`
+- `/bapi/defi/v2/private/wallet-direct/tx-history-pending-simple`
+- `/bapi/defi/v2/private/wallet-earn/simple/yield/card/loan/list`
+- `/bapi/defi/v4/private/wallet-earn/simple/yield/protocol/list`
+
+法币、合约网格、杠杆、支付、增长：
+
+- `/bapi/fiat/v2/public/fiatpayment/transactions/asset/get-asset-list`
+- `/bapi/fiat/v2/private/fiatpayment/transactions/asset/get-asset-tags`
+- `/bapi/fiat/v2/private/fiatpayment/transactions/bs/unify/get-from-asset-list`
+- `/bapi/fiat/v2/private/fiatpayment/transactions/bs/unify/get-from-asset-list?forceBusinessType=FX`
+- `/bapi/fiat/v2/private/fiatpayment/transactions/bs/unify/get-to-asset-list?fromAssetId=`
+- `/bapi/futures/v1/friendly/future/spot-copy-trade/common/recommend-lead-item`
+- `/bapi/futures/v1/private/future/grid/algo-order`
+- `/bapi/futures/v1/private/future/grid/cancel-algoOrder`
+- `/bapi/futures/v1/private/future/grid/open-algo-order`
+- `/bapi/futures/v1/private/delivery/grid/algo-order`
+- `/bapi/futures/v1/private/delivery/grid/cancel-algoOrder`
+- `/bapi/futures/v1/private/delivery/grid/open-algo-order`
+- `/bapi/futures/v1/private/future/user-setting/batch-update-saved-preferences`
+- `/bapi/margin/v1/private/isolated-margin/trade/user-symbol-cost`
+- `/bapi/margin/v2/private/margin/listen-key`
+- `/bapi/margin/v2/public/margin/get-wss-url`
+- `/bapi/pay/v1/friendly/binance-pay/layout/quick-entries`
+- `/bapi/growth/v1/private/growth/insight/recommend`
+- `/bapi/growth/v2/private/usertask/distribution-platform/popup/playbook`
+- `/bapi/fe/chimera/news-flash/friendly/v1/flash/detail`
+- `/bapi/fe/chimera/admin/a2ui/get`
+
+包外链接里新出现的是 `https://massive.com`、`https://www.dtcc.com/support/dtc-directories`，以及三篇 Web3 钱包 FAQ / 博客。域名差集写在 [surface.md](surface.md)。
 
 ## 客户端换掉的旧路径
 
-这些字符串在 3.20.5 和 3.20.6 里都有，3.21.6 没有：
+这些路径在 3.21.6 的字符串里没有，在 3.20.5 里有。归因时抽查过的，3.20.6 里也没有。
 
-- B9：`daily-report/detail-v3`、`history-v3`、v1 `homepage/watch-market`、mimir `get-b9-asset-report` v2
-- 法币：`/bapi/fiat/v1/.../get-asset-list` 以及 v1 的 asset-tags / from-asset-list
-- 跟单推荐：`home-page/recommend-lead-list`、`home-page-recommended-lead-list`，换成 `recommend-lead-item`（GET 无参是 `000002`）
+- B9 v3 / v1：`daily-report/detail-v3`、`history-v3`、`daily-report/display`、`homepage/watch-market`、`watch-market/tabs/secondary`、`widget/favouritemore`、`favouritemore/list`、`movers-highlight`、`movers-list`、`android-version`
+- 资产报告：`/bapi/fe/mimir/v2/private/get-b9-asset-report`，现货盈亏旧路径 `/bapi/composite/v1/private/report/exchange-analytics/spot-pnl/pnl`
+- 划转钱包：`setUserTransferWallet`、`userTransferWallet`
+- Earn 协议：`service-agreement`、`service-agreement/sign`，以及 v2 的 `multiple/list`、`multiple/sign`
+- P2P 借贷历史：borrower / lender 的 `adjustment-history`、`liquidation-history`、`loan-history`、`repayment-history`
+- 法币 v1：`get-asset-list`、`get-asset-tags`、`get-from-asset-list`、`isFxOnly=true`、`fromAsset=`
+- 跟单推荐：`home-page/recommend-lead-list`、`home-page-recommended-lead-list`
+- 杠杆抵押和逐仓借贷历史：`collateral/liquidation/query-force-liquidation-retail`、`query-adjustment-collateral-retail`、`collateral/repay/query`、`collateral/order/query`，以及 `flexibleLoan/isolated` 新旧两套 `adjustmentHistory` / `liquidationHistory` / `loanHistory` / `repaymentHistory` / `subscriptionHistory`
 
 ## 深链
 

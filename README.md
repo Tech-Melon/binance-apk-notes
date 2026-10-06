@@ -24,11 +24,13 @@ versions/<版本>/
   README.md       一页看懂
   changelog.md    相对上一版
   copy.md         文案（新 / 旧 / 没进包）
-  apis.md         接口（含实打）
+  apis.md         接口（全量路径 + 实打）
+  params.md       字段、开关、查询参数
+  surface.md      页面、类名、域名、依赖
   easter.md       彩蛋和误判
 ```
 
-下一版复制 [`versions/_template`](versions/_template/README.md)。
+`params.md` 和 `surface.md` 从 3.21.6 起写。更早的版本没有这两页。下一版复制 [`versions/_template`](versions/_template/README.md)。
 
 ## 不是什么
 
