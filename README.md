@@ -17,6 +17,7 @@
 | 3.20.6 | `BNApp64 (2).apk`（universal，3.19.8 后第一份完整包） | 无新页面/新接口；完整包补回旧功能译文；4 句播放器限制英文 | [versions/3.20.6](versions/3.20.6/README.md) · [对照](compare/3.20.5-3.20.6.md) |
 | 3.21.6 | `币安 3.21.6.apk`（Play base，上一版手头是 3.20.6 universal） | 美股期权开卖文案 + 备兑/现金担保 + Meme Rush + 资金账户迁移 | [versions/3.21.6](versions/3.21.6/README.md) · [对照](compare/3.20.6-3.21.6.md) |
 | 3.22.3 | `币安 3.22.3.apk`（Play base，上一版 3.21.6 也是 Play base） | 美股正股可买 + 期权适当性评估 + P2P 返现和 C2C 路径 | [versions/3.22.3](versions/3.22.3/README.md) · [对照](compare/3.21.6-3.22.3.md) |
+| 3.22.4 | `币安 3.22.4.apk`（Play base，上一版 3.22.3 也是 Play base） | 巴西合约迁 ADGM + 美股费用冻提现 + 聊天室警告 | [versions/3.22.4](versions/3.22.4/README.md) · [对照](compare/3.22.3-3.22.4.md) |
 
 ## 每版里有什么
 
